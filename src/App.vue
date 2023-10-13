@@ -1,16 +1,19 @@
 <template>
   <div>
     <h1>hola </h1>
+    <ComboCity/>
   </div>
 </template>
 
 <script>
-// import LoginView from './components/LoginView.vue';
+//  import LoginView from './components/LoginView.vue';
 //import TagCrud from './components/TagCrud.vue';
+import ComboCity from './components/ComboCity.vue';
+
 
 export default {
-  name: 'App',
-  
+    name: 'App',
+    components: { ComboCity }
 }
 </script>
 
