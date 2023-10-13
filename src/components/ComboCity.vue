@@ -38,7 +38,7 @@ export default {
     data() {
         return {
             countries:[],
-            ciudad:[],
+            cities:[],
             departaments:[],
             countrySelected: "",
             depSelected:"",
@@ -63,9 +63,9 @@ export default {
     },
     methods: {
         city(id){
-            this.countryService.getCountries().then(response => {
-                this.countries = response.data;
-                console.log(this.countries);
+            this.cityService.getCities(id).then(response => {
+                this.cities = response.data;
+                console.log(this.cities);
                 
             });
         }
